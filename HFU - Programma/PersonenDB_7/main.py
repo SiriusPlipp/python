@@ -12,7 +12,7 @@ while (True):
     print("3: Person entfernen")
     print("4: Datei speichern")
     print("5: Datei lesen")
-    print("???: Person entfernen")
+    print("???: Personen ausgeben")
     mode = int(input("Bitte wählen Sie eine Nummer"))
 
     match mode:
