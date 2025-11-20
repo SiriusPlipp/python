@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Python File as Module",
+            "type": "shell",
+            "command": "python -m ${relativeFileDirname}.${fileBasenameNoExtension}",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-Command",
+                    "python -m (('${relativeFileDirname}\\${fileBasenameNoExtension}') -replace '\\\\', '.')"
+                ]
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": false,
+                "echo": false,
+                "focus": false
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}

@@ -1,8 +1,6 @@
 import re
 import datetime
-from timer import timer
 
-@timer
 def stringToDatetime(date_string: str) -> 'datetime.datetime':
 
     match = searchStringForEveryPossibleDateFormat_rx(date_string)
