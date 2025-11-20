@@ -4,6 +4,7 @@ def newDate(day, month, year):
      return datetime.date(year = year, month =  month, day =day)
 
 class Name:
+
     def __init__(self, vorname, nachname):
         self.vorname = vorname.strip()
         self.nachname = nachname.strip()
@@ -16,6 +17,7 @@ class Name:
 
 
 class Person:
+
     def __init__(self, Name, bday):
         self.name = Name
         self.bday = bday

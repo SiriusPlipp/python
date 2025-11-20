@@ -13,8 +13,16 @@ while (True):
     print("4: Datei speichern")
     print("5: Datei lesen")
     print("???: Personen ausgeben")
-    mode = int(input("Bitte wählen Sie eine Nummer"))
+    
+    
+    mode =input("Bitte wählen Sie eine Nummer\n")
 
+    if not mode.isdigit():
+        print("ungültiger Input, win32.exe wird gelöscht...")
+        continue
+
+    mode = int(mode)
+    
     match mode:
 
         case 0:
